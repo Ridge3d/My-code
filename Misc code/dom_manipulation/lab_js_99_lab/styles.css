@@ -1,0 +1,21 @@
+body {
+    background-color: #362A28;
+  }
+  
+  h1 {
+    color: #87AD9D;
+  }
+  
+  .friend {
+    background-color: rgb(9, 120, 134);
+  }
+  
+  .friend > h3 {
+    font-variant: small-caps;
+    color: #CBD6C7;
+  }
+  
+  p {
+    color: #8FB2B9;
+  
+  }

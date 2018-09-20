@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arionna Hallberg</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1 {
+    font-family: "Montserrat", sans-serif
+  }
+
+  img {
+    margin-bottom: -7px
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+</style>
+
+<body style="background-color:lightpink" ;>
+
+  <!-- Sidebar -->
+  <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright"
+      style="padding:6px 24px">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+      <a href="photos.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+      <a href="shop.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+    </div>
+  </nav>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-content" style="max-width:1500px">
+
+    <!-- Header -->
+    <div class="w3-opacity">
+      <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+      <div class="w3-clear"></div>
+      <header class="w3-center w3-margin-bottom">
+        <h1><b>PHOTOLIO of Arionna</b></h1>
+        <p><b>Welcome to my website.</b></p>
+        <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+      </header>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+      <div class="w3-third">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/41895217_1938646332896215_8271259868451569664_n.jpg?_nc_cat=0&oh=e2c002db05de329325d8fdf7ee7830c3&oe=5C1E36A2"
+          style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/41237167_10156703720646880_2799068287458082816_n.jpg?_nc_cat=0&oh=065ad3d686ea4f8bc2277222ba05a6ce&oe=5C1F7E70"
+          style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/36912165_1833234443437405_2447643974421184512_n.jpg?_nc_cat=0&oh=2d9364e3b48f8ddde65d66fcd64d4d26&oe=5C60FF25"
+          style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/30712799_1727136627380521_8497322069373228496_n.jpg?_nc_cat=0&oh=e0de83b6c200f25449a80e7455a732b3&oe=5C307311"
+          style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/30713896_1727136614047189_7408032413871076721_n.jpg?_nc_cat=0&oh=4e36fd181a7b50ee7d9634e496551be8&oe=5C16268B"
+          style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/30713201_1727136520713865_3124105590734859439_n.jpg?_nc_cat=0&oh=e862f0fad6ad8c34830d31c113d4df56&oe=5C279FD1"
+          style="width:100%">
+      </div>
+
+      <div class="w3-third">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/30707071_1727136327380551_7675174407087143084_n.jpg?_nc_cat=0&oh=9c08109ecdf16238d7b49eaf4da97ee1&oe=5C2991DE"
+          style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/21728265_1504491559645030_7401543037254328370_n.jpg?_nc_cat=0&oh=5eab7a581ebd813a8626b7bd5f55e7c8&oe=5C336910"
+          style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/42128789_1940491812711667_6308700048880304128_n.jpg?_nc_cat=101&oh=3aded26af54471113e43e551ac440a37&oe=5C2E28BF"
+          style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/984007_1326949857399202_6272005890880898856_n.jpg?_nc_cat=0&oh=4ab0583310264deed19df0527c95ae70&oe=5C1BFBBD"
+          style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/17522697_1324698937624294_8988921418920253992_n.jpg?_nc_cat=0&oh=fd090e3b5bd91c259f3b78e9a1f636bd&oe=5C30EB71"
+          style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/42094461_1940491399378375_7051252911711453184_n.jpg?_nc_cat=102&oh=ce2ff015909da00f778055172dacaae2&oe=5C284A74"
+          style="width:100%">
+      </div>
+
+      <div class="w3-third">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/17155820_1307552456005609_1135663424602428778_n.jpg?_nc_cat=0&oh=5b201b3d8d9ceb1a72421a8ff95f35e4&oe=5C2ECC6A"
+          style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/15253402_1203422889751900_1982204316240717066_n.jpg?_nc_cat=0&oh=bf8f7c00c945b0dd2bccb98c9e1578ec&oe=5C1E029B"
+          style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/29389468_1697964780297706_2240210214675114479_n.jpg?_nc_cat=105&oh=9a555cfe8a7d59707c4e2fdf4aa29ed1&oe=5C348971"
+          style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/41889668_1940491872711661_3091988467249315840_n.jpg?_nc_cat=104&oh=efe81e5b6af7b8a17907707e9840f1be&oe=5C2A2496"
+          style="width:100%">
+        <img src="https://www.facebook.com/profile.php?id=100002526024323" style="width:100%">
+        <img src="https://scontent.frnd2-1.fna.fbcdn.net/v/t1.0-9/12512220_990943277666530_8111080023358366501_n.jpg?_nc_cat=0&oh=d5f7cf1de9afbad76d111dfa77f89851&oe=5C269ACB"
+          style="width:100%">
+      </div>
+    </div>
+
+    <!-- End Page Content -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://txhikeradventure.com/" target="_blank" class="w3-hover-text-green">The
+        Hiking Swede</a></p>
+  </footer>
+
+  <script>
+    // Toggle grid padding
+    function myFunction() {
+      var x = document.getElementById("myGrid");
+      if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+      } else {
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+      }
+    }
+
+    // Open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.width = "100%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

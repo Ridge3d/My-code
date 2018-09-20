@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<title>The Hiking Swede</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+    body,
+    h1 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+        height: 100%
+    }
+
+    .bgimg {
+        background-image: url('data:image/jpeg;base64,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');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+
+<body>
+
+    <div class="bgimg w3-display-container  w3-text-green">
+        <div class="w3-display-topleft w3-padding-small w3-small">
+            <img src="https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded400/848365/848365-1535246987177-969d1d6f658a4.jpg"
+                class="w3-circle" alt="THS">
+            <div class=" w3-leftbar ">
+                <p class="w3-small w3-serif w3-text-green">
+                    <i>"A thriller set in the deep Rockies."</i></p>
+
+                <p>- TGN</p>
+
+                <i>"Phil will keep your attention and engage you in the plot"</i></p>
+
+                <p>- JPM</p>
+            </div>
+        </div>
+        <div class="w3-display-middle">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h1 class="w3-jumbo w3-center">COMING SOON</h1>
+            <p class=" w3-large w3-center">from author Phil Hallberg</p>
+            <hr class="w3-border-red" style="margin:auto;width:40%">
+            <br>
+            <br>
+            <p class="w3-center" p> <iframe src="http://free.timeanddate.com/countdown/i6f4q1o2/n400/cf12/cm0/cu5/ct0/cs1/ca0/co0/cr0/ss0/cacf00/cpcff0/pc0f9/tcfff/fs100/szw448/szh189/iso2019-05-11T09:00:00/bo2/pd2"
+                    allowTransparency="true" frameborder="0" width="231" height="43"></iframe>
+
+                <br>
+
+                <p class="w3-jumbo w3-center"><b>The Renegade Trapper: The Tower<b></p>
+        </div>
+        <div class="w3-card-2">
+            <div class="w3-container w3-right">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR62giLIHBilMhkwgMr40VikEHptKf8dg_gZL0_3gthcWvoJ_D6Bw"
+                    alt="The Renegade Trapper">
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="w3-display-bottomleft w3-padding-large">
+            Powered by <a href="www.txhikingadventures.com" target="_blank">The Hiking Swede</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
