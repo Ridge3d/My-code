@@ -71,7 +71,64 @@
         font-size: 35px;
         cursor: pointer;
     }
+    /* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
 </style>
+
 
 <body>
     <div style="text-align:center">
@@ -114,63 +171,97 @@
             expandImg.parentElement.style.display = "block";
         }
     </script>
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-}
+    <!DOCTYPE html>
+    <html>
 
-.price {
-  color: grey;
-  font-size: 22px;
-}
+    <head>
+        <style>
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+            }
 
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
+            .price {
+                color: grey;
+                font-size: 22px;
+            }
 
-.card button:hover {
-  opacity: 0.7;
-}
-</style>
-</head>
-<body>
+            .card button {
+                border: none;
+                outline: 0;
+                padding: 12px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+            }
 
-<h2 style="text-align:center">Product Card</h2>
+            .card button:hover {
+                opacity: 0.7;
+            }
+        </style>
+    </head>
+
+    <body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <h2 style="text-align:center">10mmRope</h2>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Vw4uSJeDpXauUAzJAJkDSFgvmWkIG_aRT1AgJt0Yi9r_SwwUTw" alt="Rope" style="width:100%">
+            <h1>10mm Rope</h1>
+            <p class="price">$109.99</p>
+            <p>perfect rope for lead climbing or top roping. 10mm in a variety of colors.</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+<br>
+<h2 style="text-align:center">11mmRope</h2>
 
 <div class="card">
-  <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>Tailored Jeans</h1>
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-  <p><button>Add to Cart</button></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Vw4uSJeDpXauUAzJAJkDSFgvmWkIG_aRT1AgJt0Yi9r_SwwUTw" alt="Rope" style="width:100%">
+    <h1>11mm Rope</h1>
+    <p class="price">$129.99</p>
+    <p>perfect rope for lead climbing or top roping. 11mm in a variety of colors.</p>
+    <p><button>Add to Cart</button></p>
 </div>
+<body style="text-align:center">
 
-</body>
-</html>
+        <h2>Specials</h2>
+        
+        <div class="popup" onclick="myFunction()">Click me to toggle the popup!
+          <span class="popuptext" id="myPopup">Buy any 2 rop[es and recieve 10% off order.</span>
+        </div>
+        
+        <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+        </script>
+    </body>
+
+    </html>
 
 
 
 
 
 
-<br>
-<a href="index.html" class="btn btn-info" role="button">Return to home</a>
-<a href="checkout.html" class="btn btn-info" role="button">Check out</a>
+    <br>
+    <a href="index.html" class="btn btn-info" role="button">Return to home</a>
+    <a href="checkout.html" class="btn btn-info" role="button">Check out</a>
 
 </body>
 
