@@ -4,11 +4,44 @@
 
 <head>
     <style>
+        body, html {
+                    height: 100%;
+                    margin: 0;
+                }
+                
+                .bg {
+                    /* The image used */
+                    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoYmhR_LfS0BH3NDaTrsseze09pIkbsniMRroLjC7Lh49XNGt3iQ");
+                
+                    /* Full height */
+                    height: 100%; 
+                
+                    /* Center and scale the image nicely */
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                </style>
+</head>
+
+<body>
+
+    <div class="bg"></div>
+
+</body>
+
+</html>
+<style>
+    body, html {
+    height: 100%;
+    margin: 0;
+}
+       
         .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color: rgb(51, 99, 39);
   padding: 10px;
 }
 .grid-container > div {
@@ -36,48 +69,77 @@
 </style>
 
     <body>
-        <center>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vvusyQOJK53_usQ22IAmoVxualm-vOXJHTrkjQ4cRY15LVpY">
-        </center>
-        <br>
-        <center>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body, html {
+                        height: 100%;
+                        margin: 0;
+                    }
+                    
+                   
+                    </style>
+
+        <body>
+
+            <div class="bg"></div>
+
             <br>
-            <br>
-            <br>
-
-            <div class="container">
-                <div class="jumbotron">
-                    <h1>Welcome to Climbers Paradise</h1>
-                    <div id="example1">
-                        <p>Everything from A - Z</p>
-                        <p>Your one stop shop online</p>
-                    </div>
-
-                    <br>
-                    <br>
-
-                    <div class="grid-container">
-                        <div>
-                            <h2>Members Login</h2>
-                            <a href="members.html" class="btn btn-info" role="button">Login</a>
-                        </div>
-                        <div>
-                            <h2>Contact us</h2>
-                            <a href="contact.html" class="btn btn-info" role="button">Request info</a>
-                        </div>
-                        <div>
-                            <h2>Learn</h2>
-                            <a href="#" class="btn btn-info" role="button">About Us</a>
-                        </div>
-                        <div>
-                            <h2>Info</h2>
-                            <a href="#" class="btn btn-info" role="button">Resources</a>
+            <center>
+                <br>
+                <div class="container">
+                    <div class="jumbotron">
+                        <h1>Welcome to Climbers Paradise</h1>
+                        <div id="example1">
+                            <p>Everything from A - Z</p>
+                            <p>Your one stop shop online</p>
                         </div>
 
-                    </div>
+                        <br>
+                        <br>
 
-                    <style>
-                        body {
+                        <div class="grid-container">
+                            <div>
+                                <h2>Members Login</h2>
+                                <a href="members.html" class="btn btn-info" role="button">Login</a>
+                            </div>
+                            <div>
+                                <h2>Contact us</h2>
+                                <a href="contact.html" class="btn btn-info" role="button">Request info</a>
+                            </div>
+                            <div>
+                                <h2>Learn</h2>
+                                <a href="#" class="btn btn-info" role="button">About Us</a>
+                            </div>
+                            <div>
+                                <h2>Info</h2>
+                                <a href="#" class="btn btn-info" role="button">Resources</a>
+                            </div>
+
+                        </div>
+                        <center>
+                                <div class="container">
+                                    <h2>Shop by categories</h2>
+                                    <a href="rope.html" class="btn btn-info" role="button">Rope</a>
+                                    <a href="shoes.html" class="btn btn-info" role="button">Shoes</a>
+                                    <a href="harness.html" class="btn btn-info" role="button">Harness</a>
+                                    <a href="safety devices.html" class="btn btn-info" role="button">Safety Devices</a>
+                                    <a href="gloves.html" class="btn btn-info" role="button">Gloves</a>
+                                    <a href="carabiners.html" class="btn btn-info" role="button">Carabiners</a>
+                                    <a href="first aid.html" class="btn btn-info" role="button">First Aid</a>
+                                    <a href="clothing.html" class="btn btn-info" role="button">Clothing</a>
+                                </div>
+                
+                                <br>
+                                <br>
+                                <button type="button" class="btn btn-info">
+                                    <span class="glyphicon glyphicon-search"></span> Search
+                            </center>
+
+
+
+
+                        <style>
+                            body {
                           margin: 0;
                           min-width: 250px;
                         }
@@ -90,7 +152,7 @@
                         /* Remove margins and padding from the list */
                         ul {
                           margin: 1;
-                          padding: 50;
+                          padding: 500;
                         }
                         
                         /* Style the list items */
@@ -133,12 +195,12 @@
                           position: absolute;
                           border-color: tan;
                           border-style: solid;
-                          border-width: 0 2px 2px 0;
+                          border-width: 100 2px 2px 100;
                           top: 10px;
-                          left: 16px;
+                          left: 160px;
                           transform: rotate(45deg);
                           height: 15px;
-                          width: 7px;
+                          width: 1px;
                         }
                         
                         /* Style the close button */
@@ -146,7 +208,7 @@
                           position: absolute;
                           right: 0;
                           top: 0;
-                          padding: 12px 16px 12px 16px;
+                          padding: 2px 6px 2px 6px;
                         }
                         
                         .close:hover {
@@ -174,21 +236,21 @@
                           margin: 0;
                           border: none;
                           border-radius: 0;
-                          width: 75%;
+                          width: 25%;
                           padding: 10px;
-                          float: left;
+                          float: center;
                           font-size: 16px;
                         }
                         
                         /* Style the "Add" button */
                         .addBtn {
                           padding: 10px;
-                          width: 25%;
+                          width: 40%;
                           background: #07e6a3;
                           color: rgb(121, 37, 155);
-                          float: left;
+                          float: center;
                           text-align: center;
-                          font-size: 16px;
+                          font-size: 20px;
                           cursor: pointer;
                           transition: 0.3s;
                           border-radius: 0;
@@ -198,117 +260,100 @@
                           background-color: black;
                         }
                         </style>
-                    </head>
+                        </head>
 
-                    <body>
+                        <body>
+                            <br>
+                            <div id="myDIV" class="header">
+                                <h2 style="margin:50px">My Climbing List</h2>
+                                <input type="text" id="myInput" placeholder="Title...">
+                                <span onclick="newElement()" class="addBtn">Add</span>
+                            </div>
 
-                        <div id="myDIV" class="header">
-                            <h2 style="margin:5px">My Climbing List</h2>
-                            <input type="text" id="myInput" placeholder="Title...">
-                            <span onclick="newElement()" class="addBtn">Add</span>
-                        </div>
+                            <ul id="myUL">
+                                <li>Shop Climbers Paradise</li>
+                                <li class="checked">Find Climbing Route</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
 
-                        <ul id="myUL">
-                            <li>Shop Climbers Paradise</li>
-                            <li class="checked">Find Climbing Route</li>
-                            <li>Buy Rope</li>
-                            <li>Buy Safety</li>
-                            <li>Call Climbing Partner</li>
-                            <li>Climb On!</li>
-                        </ul>
-
-                        <script>
-                            // Create a "close" button and append it to each list item
-                            var myNodelist = document.getElementsByTagName("LI");
-                            var i;
-                            for (i = 0; i < myNodelist.length; i++) {
-                                var span = document.createElement("SPAN");
-                                var txt = document.createTextNode("\u00D7");
-                                span.className = "close";
-                                span.appendChild(txt);
-                                myNodelist[i].appendChild(span);
-                            }
-
-                            // Click on a close button to hide the current list item
-                            var close = document.getElementsByClassName("close");
-                            var i;
-                            for (i = 0; i < close.length; i++) {
-                                close[i].onclick = function () {
-                                    var div = this.parentElement;
-                                    div.style.display = "none";
+                            <script>
+                                // Create a "close" button and append it to each list item
+                                var myNodelist = document.getElementsByTagName("LI");
+                                var i;
+                                for (i = 0; i < myNodelist.length; i++) {
+                                    var span = document.createElement("SPAN");
+                                    var txt = document.createTextNode("\u00D7");
+                                    span.className = "close";
+                                    span.appendChild(txt);
+                                    myNodelist[i].appendChild(span);
                                 }
-                            }
 
-                            // Add a "checked" symbol when clicking on a list item
-                            var list = document.querySelector('ul');
-                            list.addEventListener('click', function (ev) {
-                                if (ev.target.tagName === 'LI') {
-                                    ev.target.classList.toggle('checked');
-                                }
-                            }, false);
-
-                            // Create a new list item when clicking on the "Add" button
-                            function newElement() {
-                                var li = document.createElement("li");
-                                var inputValue = document.getElementById("myInput").value;
-                                var t = document.createTextNode(inputValue);
-                                li.appendChild(t);
-                                if (inputValue === '') {
-                                    alert("You must write something!");
-                                } else {
-                                    document.getElementById("myUL").appendChild(li);
-                                }
-                                document.getElementById("myInput").value = "";
-
-                                var span = document.createElement("SPAN");
-                                var txt = document.createTextNode("\u00D7");
-                                span.className = "close";
-                                span.appendChild(txt);
-                                li.appendChild(span);
-
+                                // Click on a close button to hide the current list item
+                                var close = document.getElementsByClassName("close");
+                                var i;
                                 for (i = 0; i < close.length; i++) {
                                     close[i].onclick = function () {
                                         var div = this.parentElement;
                                         div.style.display = "none";
                                     }
                                 }
-                            }
-                        </script>
 
-                    </body>
+                                // Add a "checked" symbol when clicking on a list item
+                                var list = document.querySelector('ul');
+                                list.addEventListener('click', function (ev) {
+                                    if (ev.target.tagName === 'LI') {
+                                        ev.target.classList.toggle('checked');
+                                    }
+                                }, false);
 
-</html>
+                                // Create a new list item when clicking on the "Add" button
+                                function newElement() {
+                                    var li = document.createElement("li");
+                                    var inputValue = document.getElementById("myInput").value;
+                                    var t = document.createTextNode(inputValue);
+                                    li.appendChild(t);
+                                    if (inputValue === '') {
+                                        alert("You must write something!");
+                                    } else {
+                                        document.getElementById("myUL").appendChild(li);
+                                    }
+                                    document.getElementById("myInput").value = "";
+
+                                    var span = document.createElement("SPAN");
+                                    var txt = document.createTextNode("\u00D7");
+                                    span.className = "close";
+                                    span.appendChild(txt);
+                                    li.appendChild(span);
+
+                                    for (i = 0; i < close.length; i++) {
+                                        close[i].onclick = function () {
+                                            var div = this.parentElement;
+                                            div.style.display = "none";
+                                        }
+                                    }
+                                }
+                            </script>
+
+                        </body>
+
+                        </html>
 
 
-</center>
-<br>
-<br>
-<br>
-<center>
-    <div class="container">
-        <h2>Shop by categories</h2>
-        <a href="rope.html" class="btn btn-info" role="button">Rope</a>
-        <a href="shoes.html" class="btn btn-info" role="button">Shoes</a>
-        <a href="harness.html" class="btn btn-info" role="button">Harness</a>
-        <a href="safety devices.html" class="btn btn-info" role="button">Safety Devices</a>
-        <a href="gloves.html" class="btn btn-info" role="button">Gloves</a>
-        <a href="carabiners.html" class="btn btn-info" role="button">Carabiners</a>
-        <a href="first aid.html" class="btn btn-info" role="button">First Aid</a>
-        <a href="clothing.html" class="btn btn-info" role="button">Clothing</a>
-    </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </body>
+        <center>
+            <h3> Created by The Hiking Swede</h3>
+        </center>
+    </body>
 
-    <br>
-    <br>
-    <button type="button" class="btn btn-info">
-        <span class="glyphicon glyphicon-search"></span> Search
-</center>
-<br>
-<br>
-<br>
-<br>
-</body>
-<center>
-    <h3> Created by The Hiking Swede</h3>
-</center>
-
-</html>
+    </html>
