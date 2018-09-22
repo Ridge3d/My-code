@@ -1,106 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="UTF-8">
-<link rel="stylesheet" href="styles.css">
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-
-    <div class="container">
-        <h2>Members Login</h2>
-        <a href="members.html" class="btn btn-info" role="button">Login</a>
-
-        <div class="container">
-            <h2>Contact us</h2>
-            <a href="contact.html" class="btn btn-info" role="button">Login</a>
-            
-
-</head>
-<title>Climbers Paradise</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-
-
-<style>
-    #example1 {
-        border: 2px solid rgb(84, 248, 8);
-        padding: 10px;
-        border-bottom-left-radius: 25px;
-        
-    }
-
-    #example2 {
-        border: 2px solid rgb(84, 248, 8);
-        padding: 10px;
-        border-bottom-left-radius: 50px 20px;
-    }
-    
-body
-
-
-{
-
-    background: rgb(12, 99, 12) url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5UQ3WAvZES-x8wmbpMLK3tHzdn_snb8LFYO7Yz_A-YPhlCZr2") no-repeat fixed center; 
+    <style>
+        .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
 }
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+    </style>
+</head>
+
+<div class="container">
+
+    <title>Climbers Paradise</title>
+
+    </head>
+
+    <style>
+        #example1 {
+        border: 2px solid rgb(34, 14, 216);
+        padding: 10px;
+        border-bottom-left-radius: 25px;   
+    }
+
 </style>
 
+    <body>
+        <center>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vvusyQOJK53_usQ22IAmoVxualm-vOXJHTrkjQ4cRY15LVpY">
+        </center>
+        <br>
+        <center>
+            <br>
+            <br>
+            <br>
 
+            <div class="container">
+                <div class="jumbotron">
+                    <h1>Welcome to Climbers Paradise</h1>
+                    <div id="example1">
+                        <p>Everything from A - Z</p>
+                        <p>Your one stop shop online</p>
+                    </div>
 
+                    <br>
+                    <br>
 
-<body>
-    <center>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vvusyQOJK53_usQ22IAmoVxualm-vOXJHTrkjQ4cRY15LVpY">
-    </center>
-    <br> <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <center>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="container">
-            <div class="jumbotron">
-                <h1>Welcome to Climbers Paradise</h1>
-                <div id="example1">
-                    <p>Everything from A - Z</p>
-                </div>
+                    <div class="grid-container">
+                        <div>
+                            <h2>Members Login</h2>
+                            <a href="members.html" class="btn btn-info" role="button">Login</a>
+                        </div>
+                        <div>
+                            <h2>Contact us</h2>
+                            <a href="contact.html" class="btn btn-info" role="button">Request info</a>
+                        </div>
+                        <div>
+                            <h2>Learn</h2>
+                            <a href="#" class="btn btn-info" role="button">About Us</a>
+                        </div>
+                        <div>
+                            <h2>Info</h2>
+                            <a href="#" class="btn btn-info" role="button">Resources</a>
+                        </div>
 
-                <h2></h2>
-                <div id="example2">
-                    <p>Your one stop shop online</p>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                    </div>
 
-                <style>
-                    body {
+                    <style>
+                        body {
                           margin: 0;
                           min-width: 250px;
                         }
@@ -112,8 +89,8 @@ body
                         
                         /* Remove margins and padding from the list */
                         ul {
-                          margin: 0;
-                          padding: 0;
+                          margin: 1;
+                          padding: 50;
                         }
                         
                         /* Style the list items */
@@ -221,84 +198,84 @@ body
                           background-color: black;
                         }
                         </style>
-                </head>
+                    </head>
 
-                <body>
+                    <body>
 
-                    <div id="myDIV" class="header">
-                        <h2 style="margin:5px">My Climbing List</h2>
-                        <input type="text" id="myInput" placeholder="Title...">
-                        <span onclick="newElement()" class="addBtn">Add</span>
-                    </div>
+                        <div id="myDIV" class="header">
+                            <h2 style="margin:5px">My Climbing List</h2>
+                            <input type="text" id="myInput" placeholder="Title...">
+                            <span onclick="newElement()" class="addBtn">Add</span>
+                        </div>
 
-                    <ul id="myUL">
-                        <li>Shop Climbers Paradise</li>
-                        <li class="checked">Find Climbing Route</li>
-                        <li>Buy Rope</li>
-                        <li>Buy Safety</li>
-                        <li>Call Climbing Partner</li>
-                        <li>Climb On!</li>
-                    </ul>
+                        <ul id="myUL">
+                            <li>Shop Climbers Paradise</li>
+                            <li class="checked">Find Climbing Route</li>
+                            <li>Buy Rope</li>
+                            <li>Buy Safety</li>
+                            <li>Call Climbing Partner</li>
+                            <li>Climb On!</li>
+                        </ul>
 
-                    <script>
-                        // Create a "close" button and append it to each list item
-                        var myNodelist = document.getElementsByTagName("LI");
-                        var i;
-                        for (i = 0; i < myNodelist.length; i++) {
-                            var span = document.createElement("SPAN");
-                            var txt = document.createTextNode("\u00D7");
-                            span.className = "close";
-                            span.appendChild(txt);
-                            myNodelist[i].appendChild(span);
-                        }
-
-                        // Click on a close button to hide the current list item
-                        var close = document.getElementsByClassName("close");
-                        var i;
-                        for (i = 0; i < close.length; i++) {
-                            close[i].onclick = function () {
-                                var div = this.parentElement;
-                                div.style.display = "none";
+                        <script>
+                            // Create a "close" button and append it to each list item
+                            var myNodelist = document.getElementsByTagName("LI");
+                            var i;
+                            for (i = 0; i < myNodelist.length; i++) {
+                                var span = document.createElement("SPAN");
+                                var txt = document.createTextNode("\u00D7");
+                                span.className = "close";
+                                span.appendChild(txt);
+                                myNodelist[i].appendChild(span);
                             }
-                        }
 
-                        // Add a "checked" symbol when clicking on a list item
-                        var list = document.querySelector('ul');
-                        list.addEventListener('click', function (ev) {
-                            if (ev.target.tagName === 'LI') {
-                                ev.target.classList.toggle('checked');
-                            }
-                        }, false);
-
-                        // Create a new list item when clicking on the "Add" button
-                        function newElement() {
-                            var li = document.createElement("li");
-                            var inputValue = document.getElementById("myInput").value;
-                            var t = document.createTextNode(inputValue);
-                            li.appendChild(t);
-                            if (inputValue === '') {
-                                alert("You must write something!");
-                            } else {
-                                document.getElementById("myUL").appendChild(li);
-                            }
-                            document.getElementById("myInput").value = "";
-
-                            var span = document.createElement("SPAN");
-                            var txt = document.createTextNode("\u00D7");
-                            span.className = "close";
-                            span.appendChild(txt);
-                            li.appendChild(span);
-
+                            // Click on a close button to hide the current list item
+                            var close = document.getElementsByClassName("close");
+                            var i;
                             for (i = 0; i < close.length; i++) {
                                 close[i].onclick = function () {
                                     var div = this.parentElement;
                                     div.style.display = "none";
                                 }
                             }
-                        }
-                    </script>
 
-                </body>
+                            // Add a "checked" symbol when clicking on a list item
+                            var list = document.querySelector('ul');
+                            list.addEventListener('click', function (ev) {
+                                if (ev.target.tagName === 'LI') {
+                                    ev.target.classList.toggle('checked');
+                                }
+                            }, false);
+
+                            // Create a new list item when clicking on the "Add" button
+                            function newElement() {
+                                var li = document.createElement("li");
+                                var inputValue = document.getElementById("myInput").value;
+                                var t = document.createTextNode(inputValue);
+                                li.appendChild(t);
+                                if (inputValue === '') {
+                                    alert("You must write something!");
+                                } else {
+                                    document.getElementById("myUL").appendChild(li);
+                                }
+                                document.getElementById("myInput").value = "";
+
+                                var span = document.createElement("SPAN");
+                                var txt = document.createTextNode("\u00D7");
+                                span.className = "close";
+                                span.appendChild(txt);
+                                li.appendChild(span);
+
+                                for (i = 0; i < close.length; i++) {
+                                    close[i].onclick = function () {
+                                        var div = this.parentElement;
+                                        div.style.display = "none";
+                                    }
+                                }
+                            }
+                        </script>
+
+                    </body>
 
 </html>
 
@@ -329,15 +306,6 @@ body
 <br>
 <br>
 <br>
-<br>
-<br> <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
 </body>
 <center>
     <h3> Created by The Hiking Swede</h3>
