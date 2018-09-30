@@ -3,43 +3,21 @@ const path = require('path');
 const CLIENT_DEST = path.join(__dirname, './client/dist');
 
 module.exports = {
-    entry: ['@babel/polyfill', './client/src/index.js'],
+    entry: './client/src/index.js',
     output: { path: CLIENT_DEST, filename: 'bundle.js' },
     module: {
-        rules: [
+        loaders: [
             {
                 test: /.jsx?$/,
+                loader: 'babel-loader',
                 exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env', '@babel/preset-react'],
-                    },
-                },
-            },
-            {
-                test: /\.(png|jpg|gif)$/,
-                use: {
-                    loader: 'file-loader',
-                    options: {
-                        publicPath: '/dist/images',
-                        outputPath: 'images',
-                    },
-                },
-            },
-            {
-                test: /\.(pdf)$/,
-                use: {
-                    loader: 'file-loader',
-                    options: {
-                        publicPath: '/dist/docs',
-                        outputPath: 'docs',
-                    },
-                },
-            },
-        ],
+                query: {
+                    presets: ['env', 'react']
+                }
+            }
+        ]
     },
     resolve: {
-        extensions: ['.js', '.jsx'],
-    },
-};
+        extensions: ['.js', '.jsx']
+    }
+}
