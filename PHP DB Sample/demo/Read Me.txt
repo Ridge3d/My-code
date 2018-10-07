@@ -1,0 +1,7 @@
+Important:
+Create Database with name "allphptricks"
+then import the attached sports.sql file
+
+For More Tutotials Visit: https://www.allphptricks.com/
+
+Author: Javed Ur Rehman
