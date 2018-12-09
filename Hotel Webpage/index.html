@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>The Re-Run Room</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -8,236 +8,237 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.w3-sidebar a {font-family: "Roboto", sans-serif}
+    .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </style>
+
 <body class="w3-content" style="max-width:1200px">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
-    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <h3 class="w3-wide"><b>LOGO</b></h3>
-  </div>
-  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-button">Shirts</a>
-    <a href="#" class="w3-bar-item w3-button">Dresses</a>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      Jeans <i class="fa fa-caret-down"></i>
-    </a>
-    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-      <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-      <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-      <a href="#" class="w3-bar-item w3-button">Straight</a>
-    </div>
-    <a href="#" class="w3-bar-item w3-button">Jackets</a>
-    <a href="#" class="w3-bar-item w3-button">Gymwear</a>
-    <a href="#" class="w3-bar-item w3-button">Blazers</a>
-    <a href="#" class="w3-bar-item w3-button">Shoes</a>
-  </div>
-  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
-  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">Jeans</p>
-    <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-    </p>
-  </header>
-
-  <!-- Image header -->
-  <div class="w3-display-container w3-container">
-    <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
-    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-      <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
-      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
-      <h1 class="w3-hide-small">COLLECTION 2016</h1>
-      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
-    </div>
-  </div>
-
-  <div class="w3-container w3-text-grey" id="jeans">
-    <p>8 items</p>
-  </div>
-
-  <!-- Product grid -->
-  <div class="w3-row w3-grayscale">
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/w3images/jeans1.jpg" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="/w3images/jeans2.jpg" style="width:100%">
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/w3images/jeans2.jpg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">New</span>
-          <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+        <div class="w3-container w3-display-container w3-padding-16">
+            <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+            <h3 class="w3-wide"><b>LOGO</b></h3>
         </div>
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="/w3images/jeans3.jpg" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/w3images/jeans3.jpg" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-      </div>
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/w3images/jeans4.jpg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">Sale</span>
-          <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
+        <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+            <a href="#" class="w3-bar-item w3-button">Shirts</a>
+            <a href="#" class="w3-bar-item w3-button">Dresses</a>
+            <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+                Jeans <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+                <a href="#" class="w3-bar-item w3-button">Bootcut</a>
+                <a href="#" class="w3-bar-item w3-button">Straight</a>
+            </div>
+            <a href="#" class="w3-bar-item w3-button">Jackets</a>
+            <a href="#" class="w3-bar-item w3-button">Gymwear</a>
+            <a href="#" class="w3-bar-item w3-button">Blazers</a>
+            <a href="#" class="w3-bar-item w3-button">Shoes</a>
         </div>
-        <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
-      </div>
+        <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
+        <a href="#footer" class="w3-bar-item w3-button w3-padding">Subscribe</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+        <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Top header -->
+        <header class="w3-container w3-xlarge">
+            <p class="w3-left">Jeans</p>
+            <p class="w3-right">
+                <i class="fa fa-shopping-cart w3-margin-right"></i>
+                <i class="fa fa-search"></i>
+            </p>
+        </header>
+
+        <!-- Image header -->
+        <div class="w3-display-container w3-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEVyR6pUBzKTHFFJlTHVibon_-OcYoXsdc1pdsmOEBpmmH-vP6g" alt="Jeans" style="width:100%">
+            <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+                <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+                <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+                <h1 class="w3-hide-small">COLLECTION 2018</h1>
+                <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+            </div>
+        </div>
+
+        <div class="w3-container w3-text-grey" id="jeans">
+            <p>8 items</p>
+        </div>
+
+        <!-- Product grid -->
+        <div class="w3-row w3-grayscale">
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMEytZtWJXWoAJBFKrbaiCtOpRKqu4DRUTxsM51VjQlCAR1wbUA"
+                        style="width:100%">
+                    <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+                </div>
+                <div class="w3-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQKxKh9W3xflGBRWclQigpfq_e5NV5oeD3MAKD3SnCd4Y8UiUcKg"
+                        style="width:100%">
+                    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                        <img src="/w3images/jeans2.jpg" style="width:100%">
+                        <span class="w3-tag w3-display-topleft">New</span>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+                </div>
+                <div class="w3-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYpIp951-arde_hi1zjoL98ecXi19JHvh6xEB-1XKjb5UnhESFoA" style="width:100%">
+                    <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-JsKnF4ATsgU2H3iN5hEZJ9R6e9SVOg9ul9E5_ieCPRNcOikoAA" style="width:100%">
+                    <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+                </div>
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                        <img src="/w3images/jeans4.jpg" style="width:100%">
+                        <span class="w3-tag w3-display-topleft">Sale</span>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1jHuK1SHVm1uvY2SrQvRXeyvNE8XJuLZOyCDlMdFv-P1wpLN_" style="width:100%">
+                    <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+                </div>
+                <div class="w3-container">
+                    <img src="data:image/jpeg;base64,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" style="width:100%">
+                    <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subscribe section -->
+        <div class="w3-container w3-black w3-padding-32">
+            <h1>Subscribe</h1>
+            <p>To get special offers and VIP treatment:</p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+            <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+            <div class="w3-row-padding">
+                <div class="w3-col s4">
+                    <h4>Contact</h4>
+                    <p>Questions? Go ahead.</p>
+                    <form action="/action_page.php" target="_blank">
+                        <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+                        <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+                        <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+                        <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+                        <button type="submit" class="w3-button w3-block w3-black">Send</button>
+                    </form>
+                </div>
+
+                <div class="w3-col s4">
+                    <h4>About</h4>
+                    <p><a href="#">About us</a></p>
+                    <p><a href="#">We're hiring</a></p>
+                    <p><a href="#">Support</a></p>
+                    <p><a href="#">Shipment</a></p>
+                    <p><a href="#">Payment</a></p>
+                    <p><a href="#">Return</a></p>
+                    <p><a href="#">Help</a></p>
+                </div>
+
+                <div class="w3-col s4 w3-justify">
+                    <h4>Store</h4>
+                    <p><i class="fa fa-fw fa-map-marker"></i> The Re-Run Room</p>
+                    <p><i class="fa fa-fw fa-phone"></i> (651 314-8314)</p>
+                    <p><i class="fa fa-fw fa-envelope"></i> thererunroom@gmail.com</p>
+                    <h4>We accept</h4>
+                    <p><i class="fa fa-fw fa-cc-paypal"></i> Paypal</p>
+                    <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+                    <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+                    <br>
+                    <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+                    <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+                    <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+                </div>
+            </div>
+        </footer>
+
+        <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+                title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+        <!-- End page content -->
     </div>
 
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/w3images/jeans4.jpg" style="width:100%">
-        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="/w3images/jeans1.jpg" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-      </div>
+    <!-- Newsletter Modal -->
+    <div id="newsletter" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+            <div class="w3-container w3-white w3-center">
+                <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+                <h2 class="w3-wide">NEWSLETTER</h2>
+                <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+                <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- Subscribe section -->
-  <div class="w3-container w3-black w3-padding-32">
-    <h1>Subscribe</h1>
-    <p>To get special offers and VIP treatment:</p>
-    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
-  </div>
-  
-  <!-- Footer -->
-  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
-    <div class="w3-row-padding">
-      <div class="w3-col s4">
-        <h4>Contact</h4>
-        <p>Questions? Go ahead.</p>
-        <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
-          <button type="submit" class="w3-button w3-block w3-black">Send</button>
-        </form>
-      </div>
+    <script>
+        // Accordion 
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
 
-      <div class="w3-col s4">
-        <h4>About</h4>
-        <p><a href="#">About us</a></p>
-        <p><a href="#">We're hiring</a></p>
-        <p><a href="#">Support</a></p>
-        <p><a href="#">Find store</a></p>
-        <p><a href="#">Shipment</a></p>
-        <p><a href="#">Payment</a></p>
-        <p><a href="#">Gift card</a></p>
-        <p><a href="#">Return</a></p>
-        <p><a href="#">Help</a></p>
-      </div>
-
-      <div class="w3-col s4 w3-justify">
-        <h4>Store</h4>
-        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
-        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
-        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
-        <h4>We accept</h4>
-        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
-        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
-        <br>
-        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
-        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
-        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
-        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
-        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
-      </div>
-    </div>
-  </footer>
-
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
-
-  <!-- End page content -->
-</div>
-
-<!-- Newsletter Modal -->
-<div id="newsletter" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
-    <div class="w3-container w3-white w3-center">
-      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
-      <h2 class="w3-wide">NEWSLETTER</h2>
-      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
-    </div>
-  </div>
-</div>
-
-<script>
-// Accordion 
-function myAccFunc() {
-    var x = document.getElementById("demoAcc");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
+        // Click on the "Jeans" link on page load to open the accordion for demo purposes
+        document.getElementById("myBtn").click();
 
 
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
 
 </body>
+
 </html>
