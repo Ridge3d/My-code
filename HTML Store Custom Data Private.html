@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script>
+         function display(rank) {
+            var myRank = rank.getAttribute("data-rank-type");
+            alert("Rank " + rank.innerHTML + " has " + myRank + " points.");
+         }
+      </script>
+   </head>
+   
+   <body>
+      <h1>Rank and Points</h1>
+      <p>Click on any rank to generate the details.:</p>
+
+      <ul>
+      <li onclick = "display(this)" id = "fifth" data-rank-type = "500">Fifth</li>
+      <li onclick = "display(this)" id = "sixth" data-rank-type = "600">Sixth</li>
+      </ul>
+   </body>
+   
+</html>
