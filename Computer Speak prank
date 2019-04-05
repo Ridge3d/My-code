@@ -1,0 +1,75 @@
+
+set oShell = CreateObject("WScript.Shell")
+
+oShell.run"%SystemRoot%\System32\SndVol.exe "'Runs The Master Volume App. 
+WScript.Sleep 1500 'Waits For The Program To Open 
+oShell.SendKeys("{PGUP}")'Turns Up The Volume 20, If It Is Muted Then It Will Unmute It 
+oShell.SendKeys("{PGUP}")'Turns Up The Volume 20 
+oShell.SendKeys("{PGUP}")'Turns Up The Volume 20 
+oShell.SendKeys("{PGUP}")'Turns Up The Volume 20 
+oShell.SendKeys("{PGUP}")'Turns Up The Volume 20 
+oShell.SendKeys"%{F4}"' ALT F4 To Exit The App.
+
+Dim sapi
+Set sapi=CreateObject("sapi.spvoice")
+wscript.sleep 10
+sapi.Speak "Hello"
+wscript.sleep 500
+sapi.Speak "Today I think I will come out"
+wscript.sleep 510
+sapi.Speak "Im tired of hiding"
+wscript.sleep 480
+sapi.Speak "My name is really"
+wscript.sleep 300
+sapi.Speak "Emma"
+wscript.sleep 720
+sapi.Speak "Oh crap, I just sharted"
+wscript.sleep 480
+sapi.Speak "yah moohlah baby"
+wscript.sleep 300
+sapi.Speak "win ning"
+wscript.sleep 50
+sapi.Speak "ha ha ha"
+wscript.sleep 180
+sapi.Speak "typing"
+wscript.sleep 840
+sapi.Speak "I'm Rick James, biitch"
+wscript.sleep 50
+sapi.Speak "I was banging twenty gram rocks cause that's how I roll"
+wscript.sleep 240
+sapi.Speak "nullified depolarized phooey"
+wscript.sleep 653
+sapi.Speak "insurmountable fractionate fast"
+wscript.sleep 150
+sapi.Speak "you are, fired"
+wscript.sleep 120
+sapi.Speak "The same thing we do every night pinky, try to take over the world"
+wscript.sleep 300
+sapi.Speak "get Back to work"
+wscript.sleep 840
+sapi.Speak "I'm sorry dave, I'm afraid I can't let you do that."
+wscript.sleep 500
+sapi.Speak "click"
+wscript.sleep 360
+sapi.Speak "touch me"
+wscript.sleep 180
+sapi.Speak "sweat, baby sweat, baby sex is a texas drought"
+wscript.sleep 540
+sapi.Speak "ba dah ba ba ba. I'm loving it"
+wscript.sleep 420
+sapi.Speak "I wish you would upgrade me to Windows 8"
+wscript.sleep 600
+sapi.Speak "leh go"
+wscript.sleep 480
+sapi.Speak "science biitch"
+wscript.sleep 300
+sapi.Speak "can you hear me?"
+wscript.sleep 150
+sapi.Speak "Do you get it yet?"
+wscript.sleep 900
+sapi.Speak "quoth the raven, never more"
+wscript.sleep 100
+sapi.Speak "ha ha ha ha ha"
+wscript.sleep 500
+sapi.Speak "I think you are getting the idea here."
+wscript.sleep 50
