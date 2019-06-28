@@ -1,0 +1,121 @@
+#logo {
+    height: 40px;
+    width: 40px;
+}
+
+#title {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
+#homeText {
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+    color: black;
+}
+
+
+#homeSection {
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+#homeDarkOverlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 800px;
+    margin-top: -120px;
+    padding: 7rem 0;
+}
+
+#appSectionTitle{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+}
+
+#locateSection {
+    background-image: url("../images/bg_pattern.png");   
+} 
+
+#mapTitle {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+}
+
+#chk {
+    height: 25px;
+    width: 25px;
+}
+
+.iconOne {
+    height: 25px;
+    width: 25px;
+}
+
+.icon2 {
+    height: 30px;
+    width: 30px;
+}
+
+.icon3 {
+    height: 15px;
+    width: 15px;
+}
+
+.imgSide {
+    height: 200px;
+    width: 300px;
+}
+
+
+#map {
+    height: 50vh;
+}
+
+#addrInput {
+    width: 300px;
+}
+
+#cityInput {
+    width: 150px;
+}
+
+#stateInput {
+    width: 75px;
+}
+
+#loginSection {
+    margin-top: 100px;
+}
+
+#footer {
+    height: 100%;
+    margin-top: -8px;
+}
+
+#loginSection{
+    height: 40vh;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+
+}
+
+@media only screen and (max-width: 770px) {
+    #appSection {
+        padding: 0 20px;
+    }
+    #btns {
+        margin-bottom: 20px;
+    }
+    #searchTerm {
+        margin-left: 15px;
+    }
+    #searchBtn{
+     margin-left: 15px !important;   
+    }
+}

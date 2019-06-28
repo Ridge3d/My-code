@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Meds Checker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Abril+Fatface" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.4.0/firebaseui.css" />
+</head>
+
+<body>
+
+ <!-- navbar -->
+ <nav class="navbar navbar-expand-md navbar-light bg-info fixed-top border-warning border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="./assets/images/LOGO3.png" alt="" id="logo">
+            <span id="title">Meds_Checker</span>
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#appSection">MedsCheckerApp</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#locateSection">Locator</a>
+                </li>                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Login -->
+<section id="loginSection">
+    <div class="row">
+        <div class="col text-center">
+            <h3 class="text-info">SIGN IN</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div id="firebaseui-auth-container"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section id="footerSection">
+    <footer class="footer bg-dark text-light" id="footer">
+        <div class="container">
+            <div class="text-muted small pt-3 text-center">Copyright &copy; Codecipe LLC 2018</div>
+            <div class="text-muted small pt-3 text-center"><i class="far fa-envelope"></i>&nbsp; alex@codecipe.com</div>
+            <hr>
+        </div>
+    </footer>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/2.4.0/firebaseui.js"></script>
+<script src="assets/script/login.js"></script>
+</body>
+
+</html>
