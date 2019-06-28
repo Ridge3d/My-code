@@ -1,0 +1,343 @@
+body {
+  cursor: default;
+  background-color: #525252 !important;
+}
+
+h1 {
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 15);
+}
+
+h3 {
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 15);
+}
+
+#morning-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #F8B195;
+}
+
+#afternoon-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #FFFFFF;
+}
+
+#welcome-screen {
+  padding-top: 130px;
+}
+
+.pillbox-container {
+  padding-top: 90px;
+  padding-bottom: 6px;
+}
+
+.row {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.warning-headline {
+  color: #616161;
+}
+
+.warning-icon-container {
+  display: inline;
+}
+
+.warning-icon {
+  padding-left: 3%;
+  zoom: 4%;
+}
+
+.morning-icon {
+  zoom: 10%;
+}
+
+.afternoon-icon {
+  zoom: 10%;
+}
+
+.evening-icon {
+  zoom: 11.5%;
+}
+
+.bedtime-icon {
+  zoom: 9%;
+}
+
+.icon-container {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+
+.pillbox-cell-icon-container {
+  height: 20px;
+}
+
+#time-arrow-row {
+  margin-bottom: 30px;
+}
+
+.time-indicator {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.background {
+  background: url(image-path('background.jpg'));
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#form-container {
+  display: inline-block;
+  text-align: left;
+  padding-top: 150px;
+}
+
+#centered-form-container {
+  margin: 0px auto;
+  text-align: center;
+}
+
+.table-data {
+  color: #FFFFFF;
+}
+
+.logo {
+  margin-left: -80px;
+  padding-right: 50px;
+  padding-top: 45px;
+  zoom: 28%;
+}
+
+input.btn.btn-primary-outline {
+  background-color: #406f97;
+  font-size: 1em;
+  width: 120px;
+}
+
+a {
+  font-size: 1.3em;
+}
+
+.pillbox-row {
+  margin-top: 1px;
+}
+
+.pillbox-cell {
+  height: 320px;
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: 1.4em;
+  border: 2px #525252 solid;
+  padding-left: 50px;
+}
+
+.navbar {
+  /*font-size: 20px;*/
+}
+
+.pillbox-cell-head {
+  color: #EEEEEE;
+  font-size: 2em;
+  padding: 10px;
+  background-color: #757575;
+}
+
+.pillbox-cell-morning {
+  background-color: #F8B195;
+  position: relative;
+}
+
+.pillbox-cell-afternoon {
+  background-color: #F67280;
+}
+
+.pillbox-cell-evening {
+  background-color: #C06C84;
+}
+
+.pillbox-cell-bedtime {
+  background-color: #6C5B7B;
+}
+
+.prescription {
+  padding-bottom: 3px;
+}
+
+.ul-header {
+  margin-left: -17px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+#home-jumbotron {
+  background-color: transparent;
+  margin-top: 140px;
+  color: #e7e7e7
+}
+
+.drugs-link {
+  text-decoration: none;
+}
+
+.drugs-link:hover {
+  text-decoration: none;
+}
+
+
+/***************************/
+/*    prescription index   */
+/***************************/
+
+.parent-prescription {
+  margin: 30px;
+}
+.warning-message {
+  position: absolute;
+  background: rgba(255, 255, 255, .98);
+  color: #9E9E9E;
+  margin-top: -150px;
+  padding: 20px;
+  opacity: 50%;
+  width: 300px;
+  
+  display: none;
+  z-index: 100;
+}
+
+#new-prescription-btn {
+  margin-top: 100px;
+}
+
+.prescription {
+  background-color: white;
+}
+
+#my-rx-container {
+  margin-top: 40px;
+}
+
+.my-rx-header {
+  color: #fff;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.prescriptions-div {
+  margin-top: 20px;
+}
+
+.drug-row {
+  margin-bottom: 10px;
+}
+
+.collapsed {
+  background-color: red;
+}
+
+.active-p a {
+  text-decoration: none !important;
+}
+/*********************************/
+/* expiring prescriptions table */
+/********************************/
+
+#refill-msgs {
+  color: white;
+}
+
+#exp-soon-header {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 5px;
+  color: #F67280;
+  text-shadow: 1.5px 1.5px rgba(60, 60, 60, 0.6);
+}
+
+#exp-soon-table {
+  font-size: 1.4em;
+  text-shadow: 1.5px 1.5px rgba(60, 60, 60, 0.6);
+}
+
+#exp-soon-table td:nth-child(3) span {
+  padding-left: 2em;
+}
+
+#exp-soon-table form {
+  width: 110px;
+}
+
+#exp-soon-table input.active {
+  font-size: 1em;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  text-shadow: 1.5px 1.5px rgba(60, 60, 60, 0.6);
+}
+
+#exp-soon-table input.active:hover {
+  background-color: #F67280;
+  -webkit-transition: background-color 150ms linear, border 150ms linear;
+  -moz-transition: background-color 150ms linear, border 150ms linear;
+  -o-transition: background-color 150ms linear, border 150ms linear;
+  -ms-transition: background-color 150ms linear, border 150ms linear;
+  transition: background-color 150ms linear, border 150ms linear;
+  border: 1px solid #F67280;
+  text-shadow: none;
+}
+
+#exp-soon-table .no-refills {
+  font-size: 1em;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 120px;
+}
+
+/* end exp prescription table */
+
+.prescription h2 {
+  color: #406f97;
+}
+
+.prescription small {
+  color: 616161;
+}
+
+.prescription p {
+  color: #616161;
+}
+
+/*********************************/
+/* new prescription form/modal */
+/********************************/
+
+#drug-valid-message {
+  padding-left: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
