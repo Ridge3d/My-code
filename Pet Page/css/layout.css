@@ -539,7 +539,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .footer .footer-list-item {
-  color: #777984;
+  color: #0629f0;
   margin-bottom: 15px;
 }
 
@@ -578,7 +578,7 @@ fieldset[disabled] .btn-theme {
   width: 21px;
   height: 1px;
   display: inline-block;
-  background: #515769;
+  background: #182857;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -864,7 +864,7 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 .contact-list > li {
   font-size: 13px;
-  color: #81848f;
+  color: #e1f00c;
   margin-bottom: 10px;
 }
 
