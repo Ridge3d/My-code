@@ -39,7 +39,7 @@ p {
   font-size: 15px;
   font-weight: 400;
   font-family: Hind, sans-serif;
-  color: #a6a7aa;
+  color: #0c44ee;
   line-height: 1.4;
   margin-bottom: 15px;
 }
@@ -50,12 +50,12 @@ li a {
   font-size: 16px;
   font-weight: 500;
   font-family: Hind, sans-serif;
-  color: #515769;
+  color: #f70a8c;
 }
 
 a {
   font-family: Hind, sans-serif;
-  color: #81848f;
+  color: #0bec29;
   outline: 0;
 }
 
