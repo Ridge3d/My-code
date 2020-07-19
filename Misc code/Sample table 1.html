@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+table, th, td {
+  border: 1px solid red;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Military Branches</h2>
+<p>The various branches of services</p>
+
+<table style="width:50%">
+  <caption>Branches</caption>
+  <tr>
+    <th>Army</th> 
+    <th>Air Force</th>
+  </tr>
+  <tr>
+    <th>Navy</th>
+    <th>Marines</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Meds Checker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Check your medications for possible interactions">
+    <meta name="keywords" content="medication, interactions, codecipe, medicines, mix">
+    <meta name="author" content="Codecipe LLC">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Abril+Fatface" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-info fixed-top border-warning border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/LOGO3.png" alt="" id="logo">
+                <span id="title">Meds_Checker</span>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#homeSection">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#appSection">MedsCheckerApp</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#locateSection">Locator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                    <li class="nav-item text-right">
+                        <a class="btn">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span id="logInOut"> Login</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="homeSection">
+        <div id="homeDarkOverlay" class="d-flex align-items-center ">
+            <div class="container">
+                <div class="text-warning" id="homeText">"Peace of mind"</div>
+                <small class="text-warning ml-2">*Check your medications for possible interactions.</small>
+                <br>
+                <a class="btn btn-outline-info ml-5 mt-2" href="#appSection">Check Your Meds</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Section-->
+    <section id="appSection">
+        <div class="row mt-5">
+            <div class="col text-center" id="appSectionTitle">
+                Check Your Meds
+                <img src="./assets/images/chk.png" alt="" id="chk">
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col text-center">
+                <small class="font-italic">*Search your meds one by one and wait for your results.</small>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-3 col-sm-12 mb-2">
+                <div id="medsAddDiv"></div>
+                <div class="col" id="modSmall">
+                    <div class="card">
+                        <div class="bg-primary rounded">
+                            <img class="bg-primary ml-2 my-1 icon2" src="assets/images/ico3.png" alt="Card image cap">
+                            <span class="font-weight-bold text-white">Medication List</span>
+                        </div>
+                        <div class="card-block p-2" id="resultsMedsList"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <form id="searchFrm" class="form-inline">
+                    <div class="row mb-2">
+                        <div class="col" id="btns">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="searchTerm" placeholder="Search for Meds" required>
+                                <button type="submit" class="btn btn-primary mx-2 mt-1" id='searchBtn'>
+                                    <img src="assets/images/ico1.png" alt="not found" class='iconOne'>Search
+                                </button>
+                                <button type="button" class="btn btn-primary mt-1" id='clrBtn'>
+                                    <img src="assets/images/clr.png" alt="not found" class='iconOne'>Clear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="bg-primary rounded">
+                                <img class=" bg-primary ml-2 my-1 icon2" src="assets/images/ico4.png" alt="Card image cap">
+                                <span class="font-weight-bold text-white">Search Results</span>
+                            </div>
+                            <div class="card-block p-2" id="resultsDiv"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/chkr.jpg" alt="not found" class='mb-2 imgSide  d-none d-lg-block'>
+                        <img src="assets/images/peace.jpeg" alt="not found" class='mb-2 imgSide  d-none d-lg-block'>
+                        <img src="assets/images/presc.jpg" alt="not found" class='imgSide  d-none d-lg-block'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations-->
+
+    <section id="locateSection" class="mt-3 pt-5">
+        <div class="row">
+            <div class="col text-center mt-2 mb-4">
+                <div id="mapTitle">Google Maps Locator
+                    <i class="fas fa-map-pin"></i>
+                </div>
+                <div class="font-italic">Questions? Contact your local pharmacy or Doctor.</div>
+            </div>
+        </div>
+        <div class="row m-2 mt-4">
+            <div class="col-md-3 mb-2">
+                <div class="card" id="resultsMapCard">
+                    <div class="bg-primary rounded">
+                        <img class="icon2 bg-primary ml-2 my-1" src="assets/images/map.png" alt="Card image cap">
+                        <span class="font-weight-bold text-white">Map Locations</span>
+                    </div>
+                    <div class="card-block p-2" id="resultsMap"></div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="map"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <fieldset class="form-group mt-3">
+                                <legend>Search by Address</legend>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="opt1" value="option1" checked> Pharmacies
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="opt2" value="option2"> Doctors
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <div class="form-group">
+                                <input type="text" class="form-control d-inline mb-1" id="addrInput" aria-describedby="city" placeholder="Address">
+                                <input type="text" class="form-control d-inline" id="cityInput" aria-describedby="city" placeholder="City">
+                                <input type="text" class="form-control d-inline" id="stateInput" aria-describedby="state" placeholder="State">
+                                <div class="form-group row">
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-primary mt-2" id='searchZipBtn'>
+                                            <img class="icon3 bg-primary mx-1 my-1" src="assets/images/googleSearch.png" alt="no img"> Search
+                                        </button>
+                                        <button type="button" class="btn btn-primary mt-2" id='clearMapBtn'>
+                                            <img class="icon3 bg-primary mx-2 my-1" src="assets/images/redx.png" alt="no img">Clear
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12  ml-3">
+                        <span id='msg' class='text-danger pt-2'></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <footer class="footer bg-dark text-light" id="footer">
+            <div class="container">
+                <div class="text-muted small pt-3 text-center">Copyright &copy; Codecipe LLC 2018</div>
+                <div class="text-muted small pt-3 text-center">
+                    <a class="btn" id="contactBtn">
+                        <i class="far fa-envelope"></i>&nbsp; alex@codecipe.com
+                    </a>
+                </div>
+                <hr>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Disclaimer Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Disclaimer</h5>
+                </div>
+                <div class="modal-body">
+                    <p id="modalMsg">The information provided in this site is transcribed by the RxNav Drug Interaction API located at
+                        <a href='https://rxnav.nlm.nih.gov'>https://rxnav.nlm.nih.gov</a>. We do not take responsibility for the information provided. Any information
+                        obtained should be verified with a professional and any action you take upon the information on this
+                        website is strictly your own risk. Do you accept?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" id="modalYesBtn">Yes</button>
+                    <button type="button" class="btn btn-danger" id="modalNoBtn">NO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="msgModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Questions?</h5>
+                    <button type="button" class="close" id="closeMsgModal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form class="needs-validation" id="modalMsgFrm">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="contactName" aria-describedby="Your name." placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="Your email." placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="msgBox" aria-describedby="Your message." placeholder="Your message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-info" id="modalMsgSend">Send</button>
+                        <button type="reset" class="btn btn-danger">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Response Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="myRespModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thank You</h5>
+                </div>
+                <div class="modal-body">
+                    <p id="modalMsgResp">Message sent.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" id="modalMsgOk">OK</button>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/script/navbar-fixed.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.4.0/firebaseui.js"></script>
+    <script src="assets/script/defiant.js"></script>
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/locator.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcNLiSdt_NSCFphZhktPVZZHUaoMkrs-g&libraries=places&callback=initMap"
+        async defer></script>
+</body>
+
+</html>
