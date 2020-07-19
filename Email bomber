@@ -1,5 +1,8 @@
-
+<?php
+ composer require --dev squizlabs/php_codesniffer
+ 
 import requests
+
 
 import os
 
