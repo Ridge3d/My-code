@@ -1,0 +1,44 @@
+You can achieve this using Python with the `pygame` library, which can handle keyboard input and play sounds. Below is a simple example of how you can implement this functionality:
+
+1. Make sure you have `pygame` installed. You can install it using pip:
+
+   ```bash
+   pip install pygame
+   ```
+
+2. Use the following code to play a dog barking sound when the space bar is pressed:
+
+```python
+import pygame
+import sys
+
+# Initialize pygame
+pygame.init()
+
+# Set up the display
+screen = pygame.display.set_mode((400, 300))
+pygame.display.set_caption('Dog Bark Sound Player')
+
+# Load the sound
+bark_sound = pygame.mixer.Sound('dog_bark.wav')  # Make sure you have a dog_bark.wav file in the same directory
+
+# Main loop
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_SPACE:  # Check if space bar is pressed
+                bark_sound.play()  # Play the dog barking sound
+
+# Quit pygame
+pygame.quit()
+sys.exit()
+```
+
+### Note:
+- Replace `'dog_bark.wav'` with the path to your dog barking sound file.
+- Ensure the sound file is in the correct format (WAV is preferred) and located in the same directory as your script or provide the full path to the file.
+
+This code creates a simple window, and when you press the space bar, it plays the sound of a dog barking.
